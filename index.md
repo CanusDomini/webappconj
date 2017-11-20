@@ -1,37 +1,71 @@
-## Welcome to GitHub Pages
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
 
-You can use the [editor on GitHub](https://github.com/CanusDomini/webappconj/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<title>Conjugationer</title>
+<link href = "style.css" rel="stylesheet">
+  <link href ="https://fonts.google.com/?selection.family=Roboto" rel="stylesheet">
+  <script src = "main.js"></script>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+</head>
 
-### Markdown
+<body>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+  <h1>Japanese</h1>
+  <div id = "timer">
+    <span id = "minutes">25 </span>
+    <span id = "middle">:</span>
+    <span id = "seconds">00 </span>
+  </div>
 
-```markdown
-Syntax highlighted code block
+  <div id = "buttons">
+    <button id = "start" onclick = "loadXMLDoc()">START </button>
+    <button id = "stop" onclick = "stopGame()">STOP</button>
+  </div>
 
-# Header 1
-## Header 2
-### Header 3
+  <div id = "multi_part_question">
+    <p id = "verb">Sugaru-ipsum</p>
+    <p id = "form">-masu-ipsum</p>
+    <p id = "definition">lean on-ipsum</p>
+  </div>
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+  <form id = "form_option" name = "form_option" action = "">
+  <select name = "form" onchange ="chooseForm(this.value)">
+    <option value = ""> Select a form: </option>
+    <option value = "2-5">non-past </option>
+    <option value = "6-9">plain past </option>
+    <option value = "10-14">te form </option>
+    <option value = "15-15">i form </option>
+    <option value = "16-27">ifs </option>
+    <option value = "28-31">potential </option>
+    <option value = "32-35">passive </option>
+    <option value = "36-42">causative </option>
+    <option value = "43-46">causative passive </option>
+    <option value = "47-50">volitional </option>
+    <option value = "51-54">conjectural </option>
+    <option value = "55-58">alternative </option>
+    <option value = "59-62">imperative </option>
+    <option value = "63-66">honorific </option>
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+    <input id = "answer" type = "text" name = 'answer1'>
 
-### Jekyll Themes
+    <input id = "button" type = "button" value = "Check!" onclick = "check();">
+   </form>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CanusDomini/webappconj/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+<div id = "after_submit">
+  <p id = "number_correct"></p>
+</div>
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<!-- <a href="#" onclick="this.style.backgroundColor='#990000'">Paint it red</a>
+
+<a href="#" onclick="this.style.backgroundColor='#009900';this.style.color='#FFFFFF';">Paint it green</a> -->
+
+  </html>
+
+
+</body>
+</head>
