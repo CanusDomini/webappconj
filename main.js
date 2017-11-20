@@ -52,7 +52,7 @@ function loadXMLDoc() {
       myFunction(this);
     }
   };
-  xmlhttp.open("GET", "JLPT4ConjugationDB.xml", true);
+  xmlhttp.open("GET", "https://github.com/CanusDomini/webappconj/blob/master/JLPT4ConjugationDB.xml", true);
   xmlhttp.send();
 }
 
