@@ -36,7 +36,7 @@ function showVocab(form) {
   }
 }
 
-function startGame (form_option) {
+function startGame () {
 
   var verb = document.getElementById("verb");
   var form = document.getElementById("form");
